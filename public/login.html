@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1">
+        <title>Login</title>
+        <!-- применяется библиотека fontawesome (Font Awesome) для добавления иконок на форму -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- подключение стилей -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="login">
+            <h1>Вход в систему</h1>
+            <form action="/user/login" method="post">
+                <label for="username">
+                    <!-- иконка из библиотеки Font Awesome -->
+                    <i class="fas fa-user"></i>
+                </label>
+                <input type="text" name="username" placeholder="Логин" id="username" required>
+                <label for="password">
+                    <i class="fas fa-lock"></i>
+                </label>
+                <input type="password" name="password" placeholder="Пароль" id="password" required>
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </body>
+</html>
+
+</html>
+<!--
+width=device-width
+device-width делает так, чтобы страница соответствовала ширине экрана в аппаратно-независимых пикселях, позволяя его содержимому перекомпоновываться, подбирая экраны разных размеров.
+Установка свойства на определенный размер (например: .widthwidth=320) не рекомендуется
+
+initial-scale=1 
+В основном необходимо для того, чтобы обойти ошибку изменения ориентации из Safari для iOS < 9
+
+<input> — (с англ. input — ввод, входные\введённые данные) тег форм, используется для создания интерактивных полей ввода данных. В зависимости от атрибута type может принимать различные вид и поведение.
+type="password" — создаёт элемент ввода текста, в котором введённое значение скрывается под символами «*»
+type="submit" говорит форме, что по клику на эту кнопку форма должна отправляться по указанному в action адресу.
+type="submit" value="Войти": атрибут value (HTML тега <input>) задает значение для элемента. 
+Для <input type = "button | reset | submit"> определяет текст на кнопке.

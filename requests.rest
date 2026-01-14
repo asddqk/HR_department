@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/functions/calculate-salary
+Content-Type: application/json
+
+{
+  "last_name": "Сергеевич",
+  "first_name": "567", 
+  "middle_name": "Петров",
+  "birth_date": "1995-08-15"
+}
+
